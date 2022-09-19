@@ -1,0 +1,43 @@
+body{
+    background-color: green;
+    max-height: fit-content;
+}
+
+header{
+    background-color: red;
+}
+
+h1{
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+nav{
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    background-color: yellow;
+}
+
+a{
+    font-size: 20px;
+}
+
+
+article{
+    margin: 15px;
+    padding: 15px;
+    background-color:blueviolet;
+}
+
+footer{
+    margin: auto;
+    padding: 15px;
+    background-color: darkmagenta;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+}
