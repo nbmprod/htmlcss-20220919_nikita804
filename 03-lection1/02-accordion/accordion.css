@@ -11,12 +11,11 @@
 .accordion{
     box-sizing: border-box;
     width: 579px;
-    height: 72px;
+    /* height: 72px; */
     border: 1px solid #ACB5BD;
     border-radius: 8px;
-    padding: 23px 32px 32px;
-    
-
+    padding: 23px 32px;
+    display: flex;
 }
 
 .accordion[open]{
@@ -27,13 +26,22 @@
 
 .accordion__summary{
     color: #000000;
+    margin: 0;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
-    text-align: left;
     list-style: none;
     cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion__title{
+    margin: 0;
 }
 
 .accordion__content{
@@ -42,5 +50,6 @@
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
-    text-align: left;
 }
+
+
