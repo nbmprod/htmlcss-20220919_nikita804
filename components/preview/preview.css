@@ -1,20 +1,10 @@
 .preview{
-    /* height: 1036px; */
     background-color: var(--grey-1);
     border-top: 2px solid var(--grey-2);
     border-bottom: 2px solid var(--grey-2);
     flex-grow: 1;
-   
 }
 
-.preview__cards{
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: center;
-    gap: 30px;
-    padding-top: 68px;
-    padding-bottom: 68px;
-}
 
 .preview__card{
     width: 350px;
@@ -27,6 +17,32 @@
     border-radius: 12px;
 }
 
+.preview__cards{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
 .preview__card:hover{
     transform: rotate(90deg);
 }
+
+@media (max-width: 700px){
+
+    .preview__card{
+        width: 164px;
+        height: 231px;
+        font-size: 15px;
+    }
+    .preview__cards{
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: center;
+        gap: 16px;
+        padding-top: 68px;
+        padding-bottom: 68px;
+    }
+    }

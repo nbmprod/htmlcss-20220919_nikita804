@@ -1,9 +1,14 @@
 .footer{
-    /* height: 384px; */
     text-align: center;
     padding-top: 72px;
     padding-bottom: 136px;
     box-sizing: border-box;
+}
+
+@media (max-width: 800px){
+    .footer{
+        display: none;
+    }
 }
 
 .footer__about-title{
