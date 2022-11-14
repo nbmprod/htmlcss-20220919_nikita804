@@ -11,10 +11,81 @@
     height: 367px;
     background-color: var(--white);
     box-sizing: border-box;
-    padding: 50px;
+    padding: 32px 0px;
     font-size: 30px;
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preview__card-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.preview__card-subtitle{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.img-container{
+    flex-grow: 1;
+}
+
+.preview_tooltip-card{
+    padding: 105px 111px 32px 110px;
+}
+
+.preview_tooltip-img{
+    width: 137px; 
+    height: 79px;
+}
+
+.preview_cats-card{
+    padding-top: 40px;
+}
+
+.preview_cats-img{
+    width: 280px; 
+    height: 200px;
+}
+
+.preview_calendar-img{
+    width: 202px; 
+    height: 215px;
+}
+
+.preview_modal-dialog-img{
+    width: 284px;
+    height: 222px;
+}
+
+.preview_histogram-card{
+    padding: 61px 25px 32px 25px;
+}
+
+.preview_histogram-img{
+    width: 300px;
+    height: 157px;
+}
+
+.preview_avatar-card{
+    padding: 58px 95px 32px 95px;
+}
+
+.preview_avatar-img{
+    width: 160px;
+    height: 160px;
 }
 
 .preview__cards{
@@ -27,7 +98,7 @@
 }
 
 .preview__card:hover{
-    transform: rotate(90deg);
+    border: solid var(--grey-2) 1px;
 }
 
 @media (max-width: 700px){
@@ -35,8 +106,60 @@
     .preview__card{
         width: 164px;
         height: 231px;
-        font-size: 15px;
+        padding: 0px 0 8px 0;
+        gap: 0;
     }
+
+    .preview_tooltip-img{
+        padding-top: 30px;
+    }
+
+    .preview_cats-img{
+        width: 100%; 
+        height: 75%;
+        padding-top: 30px;
+    }
+
+    .preview_calendar-img{
+        width: 164px;
+        height: 164px;
+    }
+
+    .preview_modal-dialog-img{
+        width: 164px;
+        height: 164px;
+    }
+
+    .preview_histogram-img{
+        width: 145px;
+        height: 76px;
+        padding: 44px 0;
+        /* transform: translate(0, -36px); */
+    }
+
+    .preview_avatar-img{
+        width: 116px;
+        height: 116px;
+        padding: 24px 0;
+    }
+
+    .preview__card-title{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .preview__card-subtitle{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #ACB5BD;
+    }
+
     .preview__cards{
         display: flex;
         flex-flow: wrap row;
@@ -45,4 +168,4 @@
         padding-top: 68px;
         padding-bottom: 68px;
     }
-    }
+}
