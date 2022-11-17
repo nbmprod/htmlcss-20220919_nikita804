@@ -1,0 +1,42 @@
+.input__text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+}
+
+.input__text_input{
+    width: 350px;
+    height: 56px;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-4);
+    padding: 17px 24px 13px 24px;
+    box-sizing: border-box;
+}
+
+.input__text_input::placeholder{
+    color: var(--grey-2);
+}
+
+.input__text_input:focus{
+    border: 1px solid var(--blue);
+    box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
+    outline: none;
+}
