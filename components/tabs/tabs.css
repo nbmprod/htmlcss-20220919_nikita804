@@ -1,0 +1,83 @@
+.tabs{
+    position: relative;
+}
+
+.tabs__input{
+    position: absolute;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
+}
+
+.tabs__scroller{
+    display: flex;
+    gap: 40px;
+}
+
+.tabs__tab{
+    padding-bottom: 13px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.tabs__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-3);
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.tabs__content{
+    display: none;
+}
+
+
+#allcomponents:checked ~ .container .tabs__scroller .tabs__tab_all-components{
+    border-bottom:5px solid var(--black);
+}
+
+#allcomponents:checked ~ .container .tabs__scroller .tabs__tab_all-components .tabs__title{
+    color: var(--black);
+}
+
+#allcomponents:checked ~ .tabs__content_all{
+    display: block;
+}
+
+#complex:checked ~ .container .tabs__scroller .tabs__tab_complex{
+    border-bottom:5px solid var(--black);
+}
+
+#complex:checked ~ .container .tabs__scroller .tabs__tab_complex .tabs__title{
+    color: var(--black);
+}
+
+#complex:checked ~ .tabs__content_complex{
+    display: block;
+}
+
+#simple:checked ~ .container .tabs__scroller .tabs__tab_simple{
+    border-bottom:5px solid var(--black);
+}
+
+
+#simple:checked ~ .container .tabs__scroller .tabs__tab_simple .tabs__title{
+    color: var(--black);
+}
+
+#simple:checked ~ .tabs__content_simple{
+    display: block;
+}
+
+
+@media (max-width: 700px){
+    .tabs__scroller{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 0;
+        padding: 16px 16px 0 16px;
+    }
+}
